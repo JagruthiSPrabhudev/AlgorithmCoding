@@ -6,7 +6,7 @@ class Solution {
            map.put(nums[i],i);   
        }
         for(int i=0 ; i<nums.length; i++ ){ 
-        
+            //calculate the sum - the element and check if that element is there in the hash map
         if(map.containsKey(target - nums[i]) && map.get(target - nums[i])!= i)
             return new int[] {i,map.get(target - nums[i])};
     }
