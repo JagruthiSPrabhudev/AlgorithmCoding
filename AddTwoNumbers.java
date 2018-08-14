@@ -13,10 +13,12 @@ class Solution {
         ListNode first = null;
         int carryover = 0;
         int sum = 0;
-        
+        //loop through the two linked lists
         while(null != l1 && null != l2){
+            //calculate the sum starting from the least significant bit
             sum = carryover + (l1 != null ? l1.val:0)+(l2 != null ? l2.val:0);
             carryover = 0;
+            // If the sum of two numbers is > 9 then set current digit and carryover digit
             if(sum > 9){
              temp = new ListNode(sum%10);
              carryover = sum/10;
