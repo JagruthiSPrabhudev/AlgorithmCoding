@@ -8,7 +8,7 @@
  */
 class Solution {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-       ListNode prev = null;
+        ListNode prev = null;
         ListNode temp = null;
         ListNode first = null;
         int carryover = 0;
